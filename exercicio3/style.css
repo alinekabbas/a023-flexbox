@@ -3,8 +3,17 @@
   padding: 0;
 }
 
+body{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 main{
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
   width: 800px;
@@ -23,16 +32,24 @@ section{
 }
 
 #section-1{
+  order: 1;
 }
 
 #section-2{
+  flex-grow: 2;
+  order: 2;
 }
 
 #section-3{
+  flex-grow: 3;
+  order: 3;
 }
 
 #section-4{
+  flex-basis: 200px;
+  order: 4;
 }
 
 #section-5{
+  order: 0;
 }
